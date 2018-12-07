@@ -19,7 +19,8 @@ namespace WindowsFormsApplication1
 
         private void btnLoad_Click(object sender, EventArgs e)
         {
-            //
+            dsStudent11.Clear();
+            sqlDataAdapter1.Fill(dsStudent11);
         }
     }
 }
