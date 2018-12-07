@@ -22,5 +22,17 @@ namespace WindowsFormsApplication1
             dsStudent11.Clear();
             sqlDataAdapter1.Fill(dsStudent11);//
         }
+
+        private void btnUpadate_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                sqlDataAdapter1.Update(dsStudent11);
+            }
+            catch (Exception e1)
+            {
+                MessageBox.Show(e1.ToString());
+            }
+        }
     }
 }
